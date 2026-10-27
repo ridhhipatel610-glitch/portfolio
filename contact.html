@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Patel Riddhi - Direct Coordinates &amp; Inquiries</title>
+  <meta name="description" content="Get in touch with Patel Riddhi Jayeshbhai - Full-Stack Web Developer. Email, WhatsApp, and interactive inquiry dispatcher.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='28' fill='%23f43f5e'/><text x='50%25' y='68%25' font-size='54' font-family='sans-serif' font-weight='900' fill='white' text-anchor='middle'>RP</text><circle cx='82' cy='22' r='14' fill='%2300f5a0'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <canvas id="ambient-canvas" class="ambient-canvas"></canvas>
+
+  <div class="site-wrapper">
+
+    <!-- Live Telemetry Status Bar -->
+    <div class="telemetry-bar">
+      <div class="telemetry-container">
+        <div class="telemetry-left">
+          <span class="telemetry-pill">
+            <span class="telemetry-live-dot"></span>
+            <span>SYSTEM v3.8.0-PROD</span>
+          </span>
+          <span id="telemetry-clock" class="telemetry-clock">--:--:-- IST (Surat)</span>
+        </div>
+        <div class="telemetry-right">
+          <span class="telemetry-pill">
+            <span>⚡ Edge Latency:</span>
+            <span id="telemetry-ping" style="color: #00f5a0; font-weight:800;">16ms</span>
+          </span>
+          <button class="cmd-shortcut-hint" onclick="if(window.commandPalette) window.commandPalette.open();" title="Open HUD Command Center">
+            <span>Press <kbd>Ctrl+K</kbd> / <kbd>⌘K</kbd></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Navigation -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo-brand">
+          <div class="logo-avatar-pill">RP</div>
+          <div class="logo-title-group">
+            <span class="logo-name">
+              Riddhi Patel
+              <span class="verified-badge-mini" title="2026 Verified Developer">✓</span>
+            </span>
+            <span class="logo-badge">
+              <span class="pulse-dot"></span> SYSTEM OPERATIONAL
+            </span>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="skills.html" class="nav-link">Skills</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="cmd-nav-btn" onclick="if(window.commandPalette) window.commandPalette.open();" title="Open HUD Command Center (Ctrl+K or ⌘K)">
+            <span>⌘K</span>
+            <span>Search</span>
+          </button>
+          <a href="downloads/Patel_Riddhi_Resume.html" target="_blank" class="btn-resume-nav">
+            <span>📄</span>
+            <span>Resume (CV)</span>
+          </a>
+          <a href="PORTFOLIO_SUBMISSION_DOCUMENT.html" target="_blank" class="btn-outline">
+            <span>Report</span>
+          </a>
+          <button class="sound-toggle-btn" title="Toggle Sound">🔇</button>
+          <button class="theme-toggle-btn" title="Toggle Theme">🌙</button>
+          <a href="contact.html" class="btn-primary">
+            <span>⚡ Hire Me</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="subpage-badge">
+          <span>✉️ Dispatch &amp; Collaboration</span>
+        </div>
+        <h1 class="subpage-title">
+          Connect &amp; <span class="shimmer-text">Collaborate</span>
+        </h1>
+        <p class="subpage-subtitle">
+          Open to full-time software engineering roles, full-stack internships, and academic discussions. Feel free to reach out directly!
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section style="padding: 20px 0 90px;">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-cards">
+            
+            <div class="contact-box">
+              <div class="contact-box-left">
+                <div class="contact-box-icon">✉️</div>
+                <div>
+                  <div class="contact-box-label">Email Address</div>
+                  <div class="contact-box-val">ridhhipatel610@gmail.com</div>
+                </div>
+              </div>
+              <button class="copy-mini-btn" onclick="copyToClipboard('ridhhipatel610@gmail.com', 'Email Address')">Copy</button>
+            </div>
+
+            <div class="contact-box">
+              <div class="contact-box-left">
+                <div class="contact-box-icon">📱</div>
+                <div>
+                  <div class="contact-box-label">WhatsApp / Phone</div>
+                  <div class="contact-box-val">+91 6359976105</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: 6px;">
+                <button class="copy-mini-btn" onclick="copyToClipboard('+91 6359976105', 'Phone Number')">Copy</button>
+                <a href="https://wa.me/916359976105" target="_blank" rel="noopener noreferrer" class="copy-mini-btn" style="background:var(--mint-neon); color:#064e3b; border-color:var(--mint-neon);">Chat</a>
+              </div>
+            </div>
+
+            <div class="contact-box">
+              <div class="contact-box-left">
+                <div class="contact-box-icon">📍</div>
+                <div>
+                  <div class="contact-box-label">Residential Base</div>
+                  <div class="contact-box-val">Surat, Gujarat, India</div>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://www.linkedin.com/in/riddhi-patel-dev/" target="_blank" rel="noopener noreferrer" class="contact-box">
+              <div class="contact-box-left">
+                <div class="contact-box-icon">💼</div>
+                <div>
+                  <div class="contact-box-label">LinkedIn Profile</div>
+                  <div class="contact-box-val">linkedin.com/in/riddhi-patel-dev</div>
+                </div>
+              </div>
+              <span style="color: var(--coral-deep); font-weight: 900;">↗</span>
+            </a>
+
+            <a href="https://github.com/riddhiPatel610" target="_blank" rel="noopener noreferrer" class="contact-box">
+              <div class="contact-box-left">
+                <div class="contact-box-icon">💻</div>
+                <div>
+                  <div class="contact-box-label">GitHub Repositories</div>
+                  <div class="contact-box-val">github.com/riddhiPatel610</div>
+                </div>
+              </div>
+              <span style="color: var(--coral-deep); font-weight: 900;">↗</span>
+            </a>
+
+            <!-- Availability Pill -->
+            <div style="background: var(--mint-50); border: 1.5px solid var(--mint-200); border-radius: var(--radius-md); padding: 16px 20px; display: flex; align-items: center; gap: 12px; margin-top: 10px;">
+              <span class="pulse-dot"></span>
+              <div style="font-size: 0.88rem; font-weight: 700; color: var(--mint-800);">
+                Active Response Time: Usually replies within 2 hours. Relocation ready.
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Contact Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.35rem; font-weight: 900; color: var(--text-primary); margin-bottom: 20px;">
+              Direct Dispatch Console
+            </h3>
+            <form id="contact-form" onsubmit="handleContactSubmit(event)">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" class="form-control" placeholder="Enter your full name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" class="form-control" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message / Inquiry Details</label>
+                <textarea id="form-message" class="form-control" placeholder="Write your project requirements, opportunity details, or questions here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 13px;">
+                <span>Send Dispatch Message</span>
+                <span>✉</span>
+              </button>
+              <div id="form-status" style="margin-top: 14px; font-size: 0.9rem; text-align: center; display: none;"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating Dynamic Island HUD Dock -->
+    <div class="hud-dock-wrapper">
+      <div class="hud-dock">
+        <a href="index.html" class="hud-dock-item" title="Home"><span>🚀</span><span class="hud-tooltip">Home</span></a>
+        <a href="about.html" class="hud-dock-item" title="About"><span>👤</span><span class="hud-tooltip">About</span></a>
+        <a href="skills.html" class="hud-dock-item" title="Skills"><span>⚙️</span><span class="hud-tooltip">Skills</span></a>
+        <a href="projects.html" class="hud-dock-item" title="Projects"><span>⚡</span><span class="hud-tooltip">Projects</span></a>
+        <a href="experience.html" class="hud-dock-item" title="Experience"><span>💼</span><span class="hud-tooltip">Experience</span></a>
+        <a href="contact.html" class="hud-dock-item active" title="Contact"><span>✉️</span><span class="hud-tooltip">Contact</span></a>
+        <a href="downloads/Patel_Riddhi_Resume.html" target="_blank" class="hud-dock-item" title="Resume"><span>📄</span><span class="hud-tooltip">Resume</span></a>
+        <button class="hud-dock-item sound-toggle-btn" title="Toggle Sound"><span>🔊</span><span class="hud-tooltip">SFX</span></button>
+        <button class="hud-dock-item theme-toggle-btn" title="Toggle Theme"><span>🌙</span><span class="hud-tooltip">Theme</span></button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-rights">
+          © 2026 <strong>Patel Riddhi Jayeshbhai</strong>. SDJ International College, Surat. All rights reserved.
+        </div>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="skills.html" class="footer-link">Skills</a>
+          <a href="projects.html" class="footer-link">Projects</a>
+          <a href="experience.html" class="footer-link">Experience</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Floating Ambient Canvas Mode Switcher -->
+  <div class="canvas-mode-bar">
+    <span class="canvas-mode-label">Canvas:</span>
+    <button class="canvas-mode-btn active" data-mode="particles">Mesh</button>
+    <button class="canvas-mode-btn" data-mode="matrix">Matrix</button>
+    <button class="canvas-mode-btn" data-mode="warp">Warp</button>
+  </div>
+
+  <div id="toast" class="toast-notification"></div>
+
+  <!-- Interactive Terminal Modal Popup -->
+  <div id="terminal-modal" class="terminal-modal-backdrop">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <span class="terminal-dot dot-red" onclick="toggleTerminal(false)" style="cursor: pointer;"></span>
+          <span class="terminal-dot dot-yellow"></span>
+          <span class="terminal-dot dot-green"></span>
+        </div>
+        <div class="terminal-title">Patel Riddhi // 2026 Interactive CLI Console</div>
+        <button class="terminal-close-btn" onclick="toggleTerminal(false)" title="Close Terminal">✕</button>
+      </div>
+      <div class="terminal-quick-chips">
+        <span class="chip-label">Quick Cmds:</span>
+        <button class="term-chip" onclick="runTerminalCommand('whoami')">whoami</button>
+        <button class="term-chip" onclick="runTerminalCommand('skills')">skills</button>
+        <button class="term-chip" onclick="runTerminalCommand('projects')">projects</button>
+        <button class="term-chip" onclick="runTerminalCommand('stats')">stats</button>
+        <button class="term-chip" onclick="runTerminalCommand('clear')">clear</button>
+      </div>
+      <div class="terminal-body">
+        <div id="terminal-output">
+          <div class="term-system">
+            ✨ <strong style="color: #fb7185;">PATEL RIDDHI // 2026 ARCHITECTURAL SHELL ACTIVE</strong><br>
+            Type <span class="term-accent">'help'</span> to see all available commands!
+          </div>
+        </div>
+      </div>
+      <div class="term-input-row">
+        <span class="term-prompt">riddhi@2026:~$</span>
+        <input type="text" id="terminal-input" class="term-input-field" placeholder="Type command here..." autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+  </div>
+
+  <!-- 2026 Next-Gen Scripts -->
+  <script src="assets/js/matrix-canvas.js"></script>
+  <script src="assets/js/audio.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/command-palette.js"></script>
+  <script src="assets/js/ai-assistant.js"></script>
+  <script src="assets/js/project-inspector.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "cyber-matrix-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Web Developer Portfolio - Patel Riddhi Jayeshbhai",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "bca",
+    "mca",
+    "interactive"
+  ],
+  "author": "Patel Riddhi Jayeshbhai",
+  "license": "MIT"
+}

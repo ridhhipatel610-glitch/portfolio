@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Project Submission - Professional Portfolio Website</title>
+  <style>
+    :root {
+      --primary: #059669;
+      --primary-light: #ecfdf5;
+      --accent-pink: #ec4899;
+      --pink-subtle: #fdf2f4;
+      --text: #1f2937;
+      --text-muted: #4b5563;
+      --border: #fbcfe8;
+      --card-bg: #fffbfd;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #fff5f7;
+      color: var(--text);
+      line-height: 1.6;
+      padding: 30px 15px;
+    }
+
+    .report-container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 44px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .report-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .no-print {
+        display: none !important;
+      }
+      a {
+        color: #1e40af !important;
+        text-decoration: underline !important;
+      }
+    }
+
+    .no-print {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fdf2f4;
+      border: 1px solid #fbcfe8;
+      border-radius: 6px;
+      padding: 12px 18px;
+      margin-bottom: 24px;
+      font-size: 0.92rem;
+    }
+
+    .btn-print {
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      padding: 9px 18px;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+    }
+
+    .btn-print:hover {
+      background: #047857;
+    }
+
+    .header-box {
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+    }
+
+    .doc-category {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      color: #111827;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+    }
+
+    .student-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      font-size: 0.92rem;
+    }
+
+    .student-item strong {
+      color: #111827;
+      display: inline-block;
+      min-width: 130px;
+    }
+
+    h2 {
+      font-size: 1.28rem;
+      color: #111827;
+      margin-top: 28px;
+      margin-bottom: 14px;
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
+
+    p, li {
+      color: #374151;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 16px;
+    }
+
+    .url-card {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 14px 0 20px 0;
+    }
+
+    .url-link {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #15803d;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .url-link:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px 0;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    th {
+      background: #f8fafc;
+      color: #1e293b;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) td {
+      background: #f9fafb;
+    }
+
+    .project-card {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 14px;
+      background: #ffffff;
+    }
+
+    .project-card h3 {
+      font-size: 1.05rem;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .project-tech {
+      display: inline-block;
+      background: #eff6ff;
+      color: #1e40af;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 14px 0 24px 0;
+    }
+
+    .link-box {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 16px;
+      background: #ffffff;
+      text-decoration: none;
+      color: var(--text);
+      display: block;
+      transition: all 0.2s;
+    }
+
+    .link-box:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .link-box .label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .link-box .value {
+      font-size: 0.95rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-top: 2px;
+      word-break: break-all;
+    }
+
+    .declaration-box {
+      border: 1px dashed #9ca3af;
+      background: #fdfdfd;
+      border-radius: 6px;
+      padding: 18px 22px;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #4b5563;
+    }
+
+    .sign-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+      font-style: normal;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    @media (max-width: 640px) {
+      .student-grid, .links-grid {
+        grid-template-columns: 1fr;
+      }
+      .report-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="report-container">
+    
+    <!-- Print / Export Bar -->
+    <div class="no-print">
+      <span>Academic Course Project Submission Document</span>
+      <button class="btn-print" onclick="window.print()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        Print / Save as PDF
+      </button>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header-box">
+      <div class="doc-category">Course Project Evaluation & Web Development Submission</div>
+      <h1>Professional Portfolio Website Submission</h1>
+      <div class="subtitle">Comprehensive Technical Report & Deployment Verification</div>
+    </div>
+
+    <!-- Student & Institution Information -->
+    <div class="student-grid">
+      <div class="student-item">
+        <strong>Student Name:</strong> Patel Riddhi Jayeshbhai
+      </div>
+      <div class="student-item">
+        <strong>Program / Course:</strong> MCA / BCA
+      </div>
+      <div class="student-item">
+        <strong>College / Institute:</strong> SDJ International College, Surat
+      </div>
+      <div class="student-item">
+        <strong>Enrollment No:</strong> <em>[Enter Enrollment No]</em>
+      </div>
+      <div class="student-item">
+        <strong>Email Address:</strong> ridhhipatel610@gmail.com
+      </div>
+      <div class="student-item">
+        <strong>Contact Number:</strong> +91 6359976105
+      </div>
+      <div class="student-item">
+        <strong>Location:</strong> Surat, Gujarat, India
+      </div>
+      <div class="student-item">
+        <strong>Date of Submission:</strong> October 2026
+      </div>
+    </div>
+
+    <!-- Section 1: Hosted Website URL -->
+    <h2>1. Hosted Website URL</h2>
+    <p>The developer portfolio website is live, fully functional, and accessible via the following public URL:</p>
+    
+    <div class="url-card">
+      <div style="font-size: 0.8rem; text-transform: uppercase; font-weight: 700; color: #166534; margin-bottom: 4px;">Live Hosted Website Link</div>
+      <a href="https://riddhipatel610.github.io/portfolio" target="_blank" class="url-link">
+        https://riddhipatel610.github.io/portfolio
+      </a>
+      <div style="font-size: 0.85rem; color: #15803d; margin-top: 6px;">
+        Alternative Vercel Mirror: <a href="https://cyber-matrix-portfolio.vercel.app" target="_blank">https://cyber-matrix-portfolio.vercel.app</a>
+      </div>
+    </div>
+
+    <div style="background: var(--card-bg); border: 1px solid var(--border); padding: 14px; border-radius: 6px; margin-bottom: 24px; font-size: 0.9rem;">
+      <strong>Local Testing Server:</strong> <code>http://localhost:3000</code> &nbsp;|&nbsp; <strong>Hosting Platform:</strong> GitHub Pages / Vercel &nbsp;|&nbsp; <strong>Protocol:</strong> HTTPS Enabled with SSL Certificate
+    </div>
+
+    <!-- Section 2: Technology Stack -->
+    <h2>2. Technology Stack</h2>
+    <p>The portfolio and academic projects utilize core web technologies and modern programming languages to ensure high performance, responsiveness, and clean maintainability:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 25%;">Category</th>
+          <th style="width: 25%;">Technologies</th>
+          <th>Implementation & Role in Project</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Frontend Architecture</strong></td>
+          <td>HTML5, Semantic HTML</td>
+          <td>Clean document outline with semantic tags (`<header>`, `<nav>`, `<section>`, `<footer>`), SEO metadata, and accessibility attributes.</td>
+        </tr>
+        <tr>
+          <td><strong>Styling & Design</strong></td>
+          <td>Vanilla CSS3, Flexbox, Grid</td>
+          <td>Responsive multi-breakpoint layout without heavy external libraries; cyber HUD neon accents, 3D card tilt physics, and smooth keyframe animations.</td>
+        </tr>
+        <tr>
+          <td><strong>Client-Side Logic</strong></td>
+          <td>JavaScript (ES6+)</td>
+          <td>Dynamic typewriter animation, category project filter tabs, modal popups, and live in-browser profile editor with `localStorage` persistence.</td>
+        </tr>
+        <tr>
+          <td><strong>HUD Command Center</strong></td>
+          <td>Command Palette (Ctrl+K / ⌘K)</td>
+          <td>Instant spotlight search with keyboard navigation, fuzzy matching, and quick state dispatch across all pages, projects, and actions.</td>
+        </tr>
+        <tr>
+          <td><strong>Holographic Career AI</strong></td>
+          <td>Riddhi AI Agent</td>
+          <td>Intelligent conversational assistant with natural language comprehension, action execution, and procedural tactile audio feedback.</td>
+        </tr>
+        <tr>
+          <td><strong>Interactive Sandbox</strong></td>
+          <td>Project Architecture Inspector</td>
+          <td>Live interactive simulations for JWT role-based auth, peer barter matching, and procurement bidding evaluation with code viewers.</td>
+        </tr>
+        <tr>
+          <td><strong>Graphics & Audio</strong></td>
+          <td>HTML5 Canvas & Web Audio API</td>
+          <td>Tri-mode background rendering (Neural Cyber Mesh, Digital Matrix Stream, Quantum Warp Field) with procedural synthesizer for micro-interactions.</td>
+        </tr>
+        <tr>
+          <td><strong>Server & Backend</strong></td>
+          <td>Node.js, Express.js</td>
+          <td>Lightweight HTTP static server (`server.js`) for local hosting and REST API development in academic projects.</td>
+        </tr>
+        <tr>
+          <td><strong>Database Systems</strong></td>
+          <td>PostgreSQL, MongoDB, MySQL</td>
+          <td>Data modeling, collections, table schemas, and relational/document queries for web applications.</td>
+        </tr>
+        <tr>
+          <td><strong>Programming Languages</strong></td>
+          <td>Python, C, C++, Java, PHP</td>
+          <td>Coursework foundation and exploratory data analysis (EDA) for structured data projects.</td>
+        </tr>
+        <tr>
+          <td><strong>Color System &amp; Tokens</strong></td>
+          <td>Coral-Rose &amp; Neon Mint</td>
+          <td>2026 Next-Gen palette: Coral-Rose (#f43f5e, #fb7185) paired with Neon Mint (#00f5a0, #10b981) on Velvet Dark theme with shimmer effects.</td>
+        </tr>
+        <tr>
+          <td><strong>Architecture Model</strong></td>
+          <td>Multi-Page Portal</td>
+          <td>Dedicated pages (Home, About, Skills, Projects, Experience, Contact, Printable CV) linked via persistent navigation and floating HUD dock.</td>
+        </tr>
+        <tr>
+          <td><strong>Version Control</strong></td>
+          <td>Git, GitHub</td>
+          <td>Source code versioning, commit logs, branch workflows, and GitHub Pages deployment.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Section 3: AI Tools Utilized -->
+    <h2>3. AI Tools Utilized</h2>
+    <p>AI assistants were used responsibly during the planning, coding, and content drafting stages as assistive learning companions:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 22%;">AI Tool</th>
+          <th style="width: 25%;">Development Stage</th>
+          <th>How It Helped (Brief Description)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>ChatGPT (OpenAI)</strong></td>
+          <td>Planning & Content Drafting</td>
+          <td>Assisted with organizing portfolio section hierarchy, drafting concise project descriptions, and structuring academic submission sections.</td>
+        </tr>
+        <tr>
+          <td><strong>GitHub Copilot / Gemini</strong></td>
+          <td>Coding & Syntax Verification</td>
+          <td>Provided boilerplate HTML syntax suggestions, helped debug JavaScript DOM event listeners, and assisted with CSS responsive media queries.</td>
+        </tr>
+        <tr>
+          <td><strong>v0.dev / Design References</strong></td>
+          <td>UI/UX Inspiration</td>
+          <td>Used to review modern developer portfolio layouts, color palettes, and interactive component cards.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size: 0.88rem; color: var(--text-muted); font-style: italic;">
+      *All code recommendations and suggestions were manually reviewed, verified, customized, and tested by the student before integration.
+    </p>
+
+    <!-- Section 4: Professional Links -->
+    <h2>4. Professional Links</h2>
+    <p>Direct clickable links to professional profiles and developer accounts integrated within the portfolio:</p>
+
+    <div class="links-grid">
+      <a href="https://www.linkedin.com/in/riddhi-patel-dev/" target="_blank" class="link-box">
+        <div class="label">LinkedIn Profile</div>
+        <div class="value">linkedin.com/in/riddhi-patel-dev</div>
+      </a>
+
+      <a href="https://github.com/riddhiPatel610" target="_blank" class="link-box">
+        <div class="label">GitHub Profile</div>
+        <div class="value">github.com/riddhiPatel610</div>
+      </a>
+
+      <a href="mailto:ridhhipatel610@gmail.com" class="link-box">
+        <div class="label">Direct Email Dispatch</div>
+        <div class="value">ridhhipatel610@gmail.com</div>
+      </a>
+
+      <a href="https://wa.me/916359976105" target="_blank" class="link-box">
+        <div class="label">WhatsApp Direct Comm-Link</div>
+        <div class="value">+91 6359976105</div>
+      </a>
+
+      <a href="https://colab.research.google.com/drive/1IPLtF_LjM32drrGzTFJuS1Bd8MAyOoc1?usp=sharing" target="_blank" class="link-box" style="border-color: #f59e0b; background: #fffbeb;">
+        <div class="label" style="color: #b45309; font-weight: 700;">Google Colab EDA Notebook</div>
+        <div class="value" style="color: #b45309;">colab.research.google.com/drive/1IPLtF_...</div>
+      </a>
+    </div>
+
+    <!-- Section 5: Academic & Practical Projects -->
+    <h2>5. Featured Academic & Practical Projects</h2>
+    <p>The portfolio highlights five flagship projects showcasing hands-on experience in web development, database management, and data analysis:</p>
+
+    <div class="project-card">
+      <h3>1. Skill Swap Platform</h3>
+      <span class="project-tech">PHP 8 • MySQL • Apache • HTML5 • CSS3 • JavaScript</span>
+      <p>A web-based collaborative application where users exchange skills without monetary transactions. Users can offer their expertise (e.g. coding, UI design, languages) and learn new skills from peers, encouraging collaborative and community-based knowledge sharing.</p>
+      <p style="margin-top: 8px; font-size: 0.85rem;"><strong>Local Archive:</strong> <code>downloads/skill_swap.zip</code></p>
+    </div>
+
+    <div class="project-card">
+      <h3>2. QuickStaff: On-Demand Workforce & Staff Management System</h3>
+      <span class="project-tech">React.js (Vite) • Node.js • Express REST API • API Authentication (JWT) • PostgreSQL</span>
+      <p>A full-stack workforce and staff booking management platform built with React.js, Node.js, and PostgreSQL. Features secure API authentication with protected routes, multi-role modules (Admin Dashboard, Client Portal, Worker Shift Management), real-time staff browsing, and booking dispatch workflows.</p>
+      <p style="margin-top: 8px; font-size: 0.85rem;"><strong>Local Archive:</strong> <code>downloads/quick_staff.zip</code></p>
+    </div>
+
+    <div class="project-card">
+      <h3>3. Subscription Tracker</h3>
+      <span class="project-tech">HTML5 • CSS3 • JavaScript (ES6+) • LocalStorage / Node.js</span>
+      <p>A web application that centralizes digital subscriptions in one location. Tracks billing renewal cycles, calculates monthly and annual recurring costs, and sends timely reminders to prevent unnecessary or missed subscription payments.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>4. Government Tender & Bidding Portal</h3>
+      <span class="project-tech">Angular • HTML5 • CSS3 • JavaScript • Node.js • Express • MongoDB</span>
+      <p>A web-based digital procurement system that modernizes government tendering. Enables administrative authorities to publish tenders and vendors to submit bids online with document uploads, ensuring transparency, operational efficiency, and reduced paperwork.</p>
+      <p style="margin-top: 8px; font-size: 0.85rem;"><strong>Local Archive:</strong> <code>downloads/government_tender_portal.zip</code></p>
+    </div>
+
+    <div class="project-card">
+      <h3>5. Marriage Budget Analysis: Exploratory Data Analysis (EDA)</h3>
+      <span class="project-tech">Python • Pandas • Matplotlib • Seaborn • Google Colab Notebook</span>
+      <p>An exploratory data analysis project examining wedding budget expenditure datasets in Python. Analyzes diverse expense categories to identify spending patterns, key cost drivers, and visual distributions to support better financial planning.</p>
+      <p style="margin-top: 10px; font-size: 0.88rem;">
+        <strong>Live Colab Notebook:</strong> 
+        <a href="https://colab.research.google.com/drive/1IPLtF_LjM32drrGzTFJuS1Bd8MAyOoc1?usp=sharing" target="_blank" style="color: #0284c7; text-decoration: underline; font-family: monospace; word-break: break-all;">https://colab.research.google.com/drive/1IPLtF_LjM32drrGzTFJuS1Bd8MAyOoc1?usp=sharing</a>
+      </p>
+    </div>
+
+    <!-- Section 6: Practical Experience & Education -->
+    <h2>6. Practical Experience & Education Summary</h2>
+    
+    <div style="margin-bottom: 16px;">
+      <h3 style="font-size: 1rem; color: #1e293b; margin-bottom: 6px;">Industry Experience:</h3>
+      <p><strong>Lynx Softech</strong> — Web Development Intern (11 November 2025 – 12 December 2025)<br>
+      Hands-on practical training in frontend design, software technologies, database operations, and UI/UX basics.<br>
+      <em>Reference:</em> Kalpesh Patel (support@lynxsoftech.com | +91 9979730046)</p>
+    </div>
+
+    <div>
+      <h3 style="font-size: 1rem; color: #1e293b; margin-bottom: 6px;">Academic Qualifications:</h3>
+      <ul>
+        <li><strong>Bachelor of Computer Applications (BCA):</strong> SDJ International College, Surat (Passing Year: 2026, Score: 62.30%)</li>
+        <li><strong>Higher Secondary Certificate (H.S.C):</strong> Gujarat Secondary & Higher Secondary Board (GSEB/GBSC) (2023, Score: 75.28%)</li>
+        <li><strong>Secondary School Certificate (S.S.C):</strong> Gujarat Secondary & Higher Secondary Board (GSEB/GBSC) (2021, Score: 77.83%)</li>
+      </ul>
+    </div>
+
+    <!-- Section 7: Academic Declaration -->
+    <div class="declaration-box">
+      "I hereby declare that this project report and the accompanying professional portfolio website represent my genuine academic work. All information regarding my skills, education, internship at Lynx Softech, and academic projects is accurate. AI tools were utilized strictly for assistive guidance, syntax debugging, and learning purposes."
+      
+      <div class="sign-row">
+        <div>
+          Student: Patel Riddhi Jayeshbhai<br>
+          <span style="font-size: 0.82rem; font-weight: normal; color: var(--text-muted);">SDJ International College, Surat</span>
+        </div>
+        <div style="text-align: right;">
+          Date: 23 October 2026<br>
+          <span style="font-size: 0.82rem; font-weight: normal; color: var(--text-muted);">Surat, Gujarat</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

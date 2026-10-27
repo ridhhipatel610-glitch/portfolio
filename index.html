@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patel Riddhi | 2026 Next-Gen Developer &amp; Systems Architect</title>
+  <meta name="description" content="Official 2026 executive launch portfolio of Patel Riddhi Jayeshbhai - Full-Stack Web Developer, Systems Architect & BCA Graduate at SDJ International College, Surat. Featuring React, Node.js, PostgreSQL, and Python systems.">
+  <meta name="author" content="Patel Riddhi Jayeshbhai">
+
+  <!-- Favicon: 2026 Coral-Rose & Neon Mint Luxury Badge -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='28' fill='%23f43f5e'/><text x='50%25' y='68%25' font-size='54' font-family='sans-serif' font-weight='900' fill='white' text-anchor='middle'>RP</text><circle cx='82' cy='22' r='14' fill='%2300f5a0'/><path d='M76 22 l4 4 l8 -8' stroke='%23064e3b' stroke-width='3.5' fill='none'/></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Particle Canvas -->
+  <canvas id="ambient-canvas" class="ambient-canvas"></canvas>
+
+  <div class="site-wrapper">
+
+    <!-- Live Telemetry Status Bar -->
+    <div class="telemetry-bar">
+      <div class="telemetry-container">
+        <div class="telemetry-left">
+          <span class="telemetry-pill">
+            <span class="telemetry-live-dot"></span>
+            <span>SYSTEM v3.8.0-PROD</span>
+          </span>
+          <span id="telemetry-clock" class="telemetry-clock">--:--:-- IST (Surat)</span>
+        </div>
+        <div class="telemetry-right">
+          <span class="telemetry-pill">
+            <span>⚡ Edge Latency:</span>
+            <span id="telemetry-ping" style="color: #00f5a0; font-weight:800;">16ms</span>
+          </span>
+          <button class="cmd-shortcut-hint" onclick="if(window.commandPalette) window.commandPalette.open();" title="Open HUD Command Center">
+            <span>Press <kbd>Ctrl+K</kbd> / <kbd>⌘K</kbd></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         TOP NAVIGATION (2026 MULTI-PAGE GLASS PILL)
+         ========================================================================== -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo-brand">
+          <div class="logo-avatar-pill">RP</div>
+          <div class="logo-title-group">
+            <span class="logo-name">
+              Riddhi Patel
+              <span class="verified-badge-mini" title="2026 Verified Developer">✓</span>
+            </span>
+            <span class="logo-badge">
+              <span class="pulse-dot"></span> SYSTEM OPERATIONAL // OPEN TO WORK
+            </span>
+          </div>
+        </a>
+
+        <!-- Multi-Page Navigation Links -->
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="skills.html" class="nav-link">Skills</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Command Palette Trigger -->
+          <button class="cmd-nav-btn" onclick="if(window.commandPalette) window.commandPalette.open();" title="Open HUD Command Center (Ctrl+K or ⌘K)">
+            <span>⌘K</span>
+            <span>Search</span>
+          </button>
+
+          <!-- Official Resume / CV Trigger -->
+          <a href="downloads/Patel_Riddhi_Resume.html" target="_blank" class="btn-resume-nav" title="Download Official Executive Resume (CV)">
+            <span>📄</span>
+            <span>Resume (CV)</span>
+          </a>
+
+          <!-- Academic Report -->
+          <a href="PORTFOLIO_SUBMISSION_DOCUMENT.html" target="_blank" class="btn-outline" title="View Academic Submission Report">
+            <span>Report</span>
+          </a>
+
+          <!-- Interactive Terminal Toggle -->
+          <button class="btn-terminal-toggle" onclick="toggleTerminal(true)" title="Open Full-Screen Interactive CLI Terminal">
+            <span>&gt;_</span>
+            <span>CLI</span>
+          </button>
+
+          <!-- Audio Synthesizer FX Toggle -->
+          <button class="sound-toggle-btn" title="Toggle Tactile Audio FX">
+            🔇
+          </button>
+
+          <!-- Theme Switcher -->
+          <button class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Velvet Dark / Coral & Mint Theme">
+            🌙
+          </button>
+
+          <!-- Primary Hire Me CTA -->
+          <a href="contact.html" class="btn-primary">
+            <span>⚡ Hire Me</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         HERO SECTION (2026 KEYNOTE LAUNCH STAGE)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-launch-badge">
+              <span>🚀 2026 ARCHITECTURAL RELEASE • FULL-STACK CANDIDATE V3.6</span>
+              <span class="hero-badge-tag">LIVE NOW ↗</span>
+            </div>
+            
+            <h1 class="hero-title">
+              HI, I'M <span class="shimmer-text">PATEL RIDDHI</span>
+            </h1>
+            
+            <div class="hero-typewriter-box">
+              <span>🌿</span>
+              <span id="hero-typewriter">Full-Stack Systems Architect</span>
+              <span class="typewriter-cursor"></span>
+            </div>
+            
+            <p class="hero-desc">
+              Architecting enterprise-grade web applications, token-authenticated microservices, and relational data structures using <strong>React.js, Node.js, Express, PostgreSQL, and Python</strong>. Completed intensive practical industrial training at <strong>Lynx Softech</strong> with a focus on clean modular code and scalable workflows.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#pages-portal" class="btn-primary">
+                <span>⚡ Explore All Pages</span>
+                <span>↓</span>
+              </a>
+
+              <!-- Live Interactive Sandbox & Architecture Inspector -->
+              <button onclick="if(window.projectInspector) window.projectInspector.open('quickstaff');" class="btn-mint-hero" style="border: 1.5px solid #00f5a0; box-shadow: 0 0 16px rgba(0,245,160,0.3);">
+                <span>🎮 Live Sandbox &amp; Arch</span>
+                <span>↗</span>
+              </button>
+              
+              <!-- Download Resume (CV) Button -->
+              <a href="downloads/Patel_Riddhi_Resume.html" target="_blank" class="btn-outline">
+                <span>📄 Resume (CV)</span>
+                <span>↓</span>
+              </a>
+
+              <button onclick="toggleTerminal(true)" class="btn-outline">
+                <span>💻 Terminal CLI</span>
+                <span>&gt;_</span>
+              </button>
+
+              <button onclick="if(window.aiAssistant) window.aiAssistant.open();" class="btn-outline" style="border-color: #fda4af;">
+                <span>🤖 Ask Riddhi AI</span>
+                <span>✨</span>
+              </button>
+            </div>
+
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <span class="stat-number stat-number-coral">05+</span>
+                <span class="stat-label">Production Apps</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number stat-number-mint">2026</span>
+                <span class="stat-label">Graduation Batch</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">Lynx</span>
+                <span class="stat-label">Softech Intern</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number stat-number-coral">62.3%</span>
+                <span class="stat-label">BCA Distinction</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2026 Holographic Executive Profile Card -->
+          <div class="hero-card-wrapper">
+            <div class="hero-card">
+              <div class="hero-card-top-tag"></div>
+              
+              <div class="profile-avatar-container">
+                <div class="profile-avatar-circle">
+                  <img src="assets/images/avatar.jpg" alt="Patel Riddhi" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                  <span style="display:none; color:#f43f5e; font-weight:900; font-size:2.8rem;">RP</span>
+                </div>
+                <div class="profile-verified-badge" title="2026 Verified Systems Architect">✓</div>
+              </div>
+
+              <div class="profile-header-info">
+                <div class="profile-name">Patel Riddhi Jayeshbhai</div>
+                <div class="profile-role">Full-Stack Systems Architect &amp; Engineer</div>
+                <div class="profile-status-pill">
+                  <span class="pulse-dot"></span> ACTIVE // AVAILABLE FOR EMPLOYMENT
+                </div>
+              </div>
+
+              <!-- Dedicated Download CV Card Action -->
+              <div class="profile-card-resume-cta">
+                <a href="downloads/Patel_Riddhi_Resume.html" target="_blank" class="btn-card-resume">
+                  <span>📄 Download Official Resume (CV)</span>
+                  <span>↗</span>
+                </a>
+              </div>
+
+              <div class="profile-meta-list">
+                <div class="meta-row">
+                  <span class="meta-label">🎓 Alma Mater</span>
+                  <span class="meta-val">SDJ International College</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">📜 Program</span>
+                  <span class="meta-val">BCA (Passing 2026 • 62.30%)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">💼 Industry Exp</span>
+                  <span class="meta-val">Lynx Softech (Web Dev)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">📍 Base</span>
+                  <span class="meta-val">Surat, Gujarat, India</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">✉️ Direct Email</span>
+                  <span class="meta-val">
+                    <span style="font-size: 0.8rem;">ridhhipatel610@gmail.com</span>
+                    <button class="copy-mini-btn" onclick="copyToClipboard('ridhhipatel610@gmail.com', 'Email Address')">Copy</button>
+                  </span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">📱 Dispatch Line</span>
+                  <span class="meta-val">
+                    <span style="font-size: 0.84rem;">+91 6359976105</span>
+                    <button class="copy-mini-btn" onclick="copyToClipboard('+91 6359976105', 'Phone Number')">Copy</button>
+                  </span>
+                </div>
+              </div>
+
+              <div class="social-links-grid">
+                <a href="https://github.com/riddhiPatel610" target="_blank" rel="noopener noreferrer" class="social-link-btn" title="GitHub Profile">
+                  <span>💻 GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/riddhi-patel-dev/" target="_blank" rel="noopener noreferrer" class="social-link-btn" title="LinkedIn Profile">
+                  <span>💼 LinkedIn</span>
+                </a>
+                <a href="mailto:ridhhipatel610@gmail.com" class="social-link-btn" title="Email Inquiries">
+                  <span>✉️ Email</span>
+                </a>
+                <a href="https://wa.me/916359976105" target="_blank" rel="noopener noreferrer" class="social-link-btn" title="WhatsApp Chat">
+                  <span>📱 WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPLORE ALL WEBSITE PAGES (PORTAL DIRECTORY SECTION)
+         ========================================================================== -->
+    <section class="pages-portal-section section-alt" id="pages-portal">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Website Architecture</span>
+          <h2 class="section-heading">Explore All Dedicated Pages</h2>
+          <p class="section-subhead">
+            Browse through each dedicated page of the portfolio to inspect academic credentials, technical competency radar, and featured application packages.
+          </p>
+        </div>
+
+        <div class="pages-portal-grid">
+
+          <!-- Page 1: About Me -->
+          <div class="page-portal-card">
+            <div class="page-portal-top">
+              <div class="page-portal-icon">👤</div>
+              <span class="page-portal-badge">BIOGRAPHY &amp; BIO</span>
+            </div>
+            <h3 class="page-portal-title">About Me &amp; Journey</h3>
+            <p class="page-portal-desc">
+              Comprehensive academic journey, educational credentials (BCA 62.3%, HSC 75.3%, SSC 77.8%), career objectives, and bilingual Gujarati heritage bio.
+            </p>
+            <div class="page-portal-tags">
+              <span class="portal-tag-pill">BCA 62.3%</span>
+              <span class="portal-tag-pill">MCA Aspirant</span>
+              <span class="portal-tag-pill">SDJ College</span>
+              <span class="portal-tag-pill">Surat, Gujarat</span>
+            </div>
+            <a href="about.html" class="page-portal-link">
+              <span>View About Page</span>
+              <span>→</span>
+            </a>
+          </div>
+
+          <!-- Page 2: Technical Skills -->
+          <div class="page-portal-card">
+            <div class="page-portal-top">
+              <div class="page-portal-icon">⚙️</div>
+              <span class="page-portal-badge">RADAR &amp; STACK</span>
+            </div>
+            <h3 class="page-portal-title">Skills &amp; Architecture</h3>
+            <p class="page-portal-desc">
+              Quantified skill competency meters spanning React.js frontend architecture, Node/Express APIs, PostgreSQL relational modeling, and Python EDA data tools.
+            </p>
+            <div class="page-portal-tags">
+              <span class="portal-tag-pill">React.js</span>
+              <span class="portal-tag-pill">Node &amp; Express</span>
+              <span class="portal-tag-pill">PostgreSQL</span>
+              <span class="portal-tag-pill">Python EDA</span>
+            </div>
+            <a href="skills.html" class="page-portal-link">
+              <span>View Skills Radar</span>
+              <span>→</span>
+            </a>
+          </div>
+
+          <!-- Page 3: Production Projects -->
+          <div class="page-portal-card">
+            <div class="page-portal-top">
+              <div class="page-portal-icon">🚀</div>
+              <span class="page-portal-badge">5 RELEASES</span>
+            </div>
+            <h3 class="page-portal-title">Featured Projects</h3>
+            <p class="page-portal-desc">
+              Full-stack production showcases with simulated browser viewports: QuickStaff (Auth &amp; Portals), Skill Swap (PHP/MySQL), Tender Portal, and Marriage EDA.
+            </p>
+            <div class="page-portal-tags">
+              <span class="portal-tag-pill">QuickStaff</span>
+              <span class="portal-tag-pill">Skill Swap</span>
+              <span class="portal-tag-pill">Tender Portal</span>
+              <span class="portal-tag-pill">Budget EDA</span>
+            </div>
+            <a href="projects.html" class="page-portal-link">
+              <span>View Projects Showcase</span>
+              <span>→</span>
+            </a>
+          </div>
+
+          <!-- Page 4: Industrial Experience -->
+          <div class="page-portal-card">
+            <div class="page-portal-top">
+              <div class="page-portal-icon">💼</div>
+              <span class="page-portal-badge">LYNX SOFTECH</span>
+            </div>
+            <h3 class="page-portal-title">Work Experience</h3>
+            <p class="page-portal-desc">
+              Detailed industrial internship credentials, daily technical responsibilities, SDLC learning, and verified contact reference from Kalpesh Patel at Lynx Softech.
+            </p>
+            <div class="page-portal-tags">
+              <span class="portal-tag-pill">Lynx Softech</span>
+              <span class="portal-tag-pill">Web Dev Intern</span>
+              <span class="portal-tag-pill">SDLC Practiced</span>
+              <span class="portal-tag-pill">Kalpesh Patel Ref</span>
+            </div>
+            <a href="experience.html" class="page-portal-link">
+              <span>View Experience Page</span>
+              <span>→</span>
+            </a>
+          </div>
+
+          <!-- Page 5: Contact & Inquiries -->
+          <div class="page-portal-card">
+            <div class="page-portal-top">
+              <div class="page-portal-icon">✉️</div>
+              <span class="page-portal-badge">DISPATCH LINE</span>
+            </div>
+            <h3 class="page-portal-title">Contact &amp; Hire</h3>
+            <p class="page-portal-desc">
+              Direct communication channels, verified email, WhatsApp hotline with 1-click copy, and an interactive dispatch inquiry console with instant client draft generation.
+            </p>
+            <div class="page-portal-tags">
+              <span class="portal-tag-pill">ridhhipatel610@gmail.com</span>
+              <span class="portal-tag-pill">+91 6359976105</span>
+              <span class="portal-tag-pill">WhatsApp</span>
+            </div>
+            <a href="contact.html" class="page-portal-link">
+              <span>View Contact Page</span>
+              <span>→</span>
+            </a>
+          </div>
+
+          <!-- Page 6: Official Resume (CV) -->
+          <div class="page-portal-card">
+            <div class="page-portal-top">
+              <div class="page-portal-icon">📄</div>
+              <span class="page-portal-badge">PDF / PRINT READY</span>
+            </div>
+            <h3 class="page-portal-title">Official Resume (CV)</h3>
+            <p class="page-portal-desc">
+              One-page executive printable curriculum vitae with clean formatting, verified credentials, and instant 1-click print-to-PDF button in matching Coral &amp; Mint colors.
+            </p>
+            <div class="page-portal-tags">
+              <span class="portal-tag-pill">1-Page Format</span>
+              <span class="portal-tag-pill">ATS Optimized</span>
+              <span class="portal-tag-pill">Instant Print-to-PDF</span>
+            </div>
+            <a href="downloads/Patel_Riddhi_Resume.html" target="_blank" class="page-portal-link">
+              <span>View / Download Resume</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BENTO MATRIX & LIVE EMBEDDED CLI TERMINAL (HOME HIGHLIGHTS)
+         ========================================================================== -->
+    <section class="bento-section" id="bento">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Live Sandbox</span>
+          <h2 class="section-heading">Executive Bento Matrix</h2>
+          <p class="section-subhead">
+            Modular interactive CLI terminal environment and verified industrial credentials.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Bento Tile 1: Live Embedded Terminal (Span 8) -->
+          <div class="bento-card bento-col-8">
+            <div class="bento-card-header">
+              <div>
+                <span class="bento-tag">Live CLI Sandbox</span>
+                <h3 class="bento-title" style="margin-top: 6px;">Interactive Developer Console</h3>
+              </div>
+              <span class="bento-tag-mint" style="font-size: 0.72rem; padding: 2px 10px; border-radius: 9999px;">SHELL v3.6 READY</span>
+            </div>
+            <p class="bento-desc">
+              Execute real-time diagnostic commands right from this browser sandbox. Type commands or click the action pills below:
+            </p>
+
+            <div class="embedded-terminal-box">
+              <div class="embed-term-header">
+                <div class="embed-term-dots">
+                  <span class="embed-term-dot dot-red"></span>
+                  <span class="embed-term-dot dot-yellow"></span>
+                  <span class="embed-term-dot dot-green"></span>
+                </div>
+                <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #fda4af;">
+                  riddhi@2026:~$ // system terminal
+                </div>
+                <button onclick="toggleTerminal(true)" style="color: #00f5a0; font-size: 0.76rem; font-family: var(--font-mono); cursor: pointer;" title="Expand Full-screen Terminal">
+                  [EXPAND ↗]
+                </button>
+              </div>
+
+              <!-- Quick Command Pills inside Bento Terminal -->
+              <div class="embed-term-chips">
+                <span class="chip-label">Run:</span>
+                <button class="term-chip" onclick="runTerminalCommand('whoami')">whoami</button>
+                <button class="term-chip" onclick="runTerminalCommand('skills')">skills</button>
+                <button class="term-chip" onclick="runTerminalCommand('projects')">projects</button>
+                <button class="term-chip" onclick="runTerminalCommand('stats')">stats</button>
+                <button class="term-chip" onclick="runTerminalCommand('gujarati')">gujarati</button>
+                <button class="term-chip" onclick="runTerminalCommand('clear')">clear</button>
+              </div>
+
+              <div class="embed-term-body" id="embedded-term-body">
+                <div id="embedded-term-output">
+                  <div class="term-system">
+                    ✨ <strong style="color: #fb7185;">PATEL RIDDHI // 2026 ARCHITECTURAL SHELL ACTIVE</strong><br>
+                    • Type <span class="term-accent">'help'</span> or click the pills above to inspect credentials &amp; stacks.
+                  </div>
+                </div>
+              </div>
+
+              <div class="embed-term-input-row">
+                <span class="term-prompt">riddhi@2026:~$</span>
+                <input type="text" id="embedded-term-input" class="embed-term-input-field" placeholder="Type command here (e.g. whoami, skills, projects)..." autocomplete="off" spellcheck="false">
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Tile 2: Lynx Softech Industry Certification (Span 4) -->
+          <div class="bento-card bento-col-4">
+            <div class="bento-card-header">
+              <span class="bento-tag bento-tag-mint">Industrial Training</span>
+              <span style="font-size: 1.25rem;">💼</span>
+            </div>
+            <h3 class="bento-title">Lynx Softech Internship</h3>
+            <div style="font-size: 0.84rem; font-family: var(--font-mono); color: var(--mint-700); font-weight: 800; margin-bottom: 12px;">
+              ● 11 Nov 2025 – 12 Dec 2025 // COMPLETED
+            </div>
+            <p class="bento-desc" style="font-size: 0.92rem;">
+              Intensive industry immersion delivering responsive frontend architectures, REST API integrations, and database operations.
+            </p>
+            <div style="background: var(--mint-50); border: 1px solid var(--mint-200); padding: 12px; border-radius: var(--radius-md); margin-top: auto;">
+              <div style="font-size: 0.78rem; font-weight: 800; color: var(--mint-800); text-transform: uppercase;">Verified Reference:</div>
+              <div style="font-size: 0.88rem; font-weight: 700; color: var(--mint-900); margin-top: 2px;">Kalpesh Patel</div>
+              <div style="font-size: 0.8rem; color: var(--mint-700);">support@lynxsoftech.com • +91 9979730046</div>
+            </div>
+            <div style="margin-top: 14px;">
+              <a href="experience.html" class="page-portal-link" style="border: none; padding: 0;">View Full Experience Details →</a>
+            </div>
+          </div>
+
+          <!-- Bento Tile 3: Academic Honors & Scores (Span 4) -->
+          <div class="bento-card bento-col-4">
+            <div class="bento-card-header">
+              <span class="bento-tag">Academic Honors</span>
+              <span style="font-size: 1.25rem;">🎓</span>
+            </div>
+            <h3 class="bento-title">Distinction Metrics</h3>
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #fff; border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+                <div>
+                  <div style="font-weight: 800; font-size: 0.92rem;">BCA Degree</div>
+                  <div style="font-size: 0.76rem; color: var(--text-muted);">SDJ International College</div>
+                </div>
+                <span style="font-family: var(--font-mono); font-weight: 900; color: var(--mint-700); background: var(--mint-50); border: 1px solid var(--mint-200); padding: 2px 8px; border-radius: var(--radius-full); font-size: 0.85rem;">62.30%</span>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #fff; border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+                <div>
+                  <div style="font-weight: 800; font-size: 0.92rem;">H.S.C (12th)</div>
+                  <div style="font-size: 0.76rem; color: var(--text-muted);">Gujarat Board (GSEB)</div>
+                </div>
+                <span style="font-family: var(--font-mono); font-weight: 900; color: var(--coral-deep); background: var(--coral-50); border: 1px solid var(--coral-200); padding: 2px 8px; border-radius: var(--radius-full); font-size: 0.85rem;">75.28%</span>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #fff; border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+                <div>
+                  <div style="font-weight: 800; font-size: 0.92rem;">S.S.C (10th)</div>
+                  <div style="font-size: 0.76rem; color: var(--text-muted);">Gujarat Board (GSEB)</div>
+                </div>
+                <span style="font-family: var(--font-mono); font-weight: 900; color: var(--coral-deep); background: var(--coral-50); border: 1px solid var(--coral-200); padding: 2px 8px; border-radius: var(--radius-full); font-size: 0.85rem;">77.83%</span>
+              </div>
+            </div>
+            <div style="margin-top: 14px;">
+              <a href="about.html" class="page-portal-link" style="border: none; padding: 0;">Inspect Full Academic Timeline →</a>
+            </div>
+          </div>
+
+          <!-- Bento Tile 4: Bilingual Heritage Plaque (Span 8) -->
+          <div class="bento-card bento-col-8">
+            <div class="bento-card-header">
+              <span class="bento-tag bento-tag-mint">Cultural Identity &amp; Vision</span>
+              <span style="font-size: 1.25rem;">🌸</span>
+            </div>
+            <h3 class="bento-title">સ્થાનિક પરિચય (Gujarati Heritage)</h3>
+            <div style="background: linear-gradient(135deg, rgba(255, 241, 245, 0.95) 0%, rgba(237, 255, 247, 0.9) 100%); border: 1.5px solid var(--coral-300); border-left: 6px solid var(--coral-500); padding: 18px 22px; border-radius: var(--radius-md);">
+              <p style="font-size: 1rem; line-height: 1.8; color: var(--text-primary); font-weight: 600;">
+                હું પટેલ રિદ્ધિ જયેશભાઈ, સુરતની એસ.ડી.જે. ઇન્ટરનેશનલ કોલેજમાંથી બી.સી.એ. (BCA) ના છેલ્લા વર્ષમાં અભ્યાસ કરું છું. મેં લિંક્સ સોફ્ટટેક (Lynx Softech) માં વેબ ડેવલપમેન્ટ ઇન્ટર્ન તરીકે વ્યવહારુ તાલીમ લીધેલ છે અને React.js, Node.js, Python તથા MySQL/PostgreSQL પર 5+ પ્રોજેક્ટ્સ સફળતાપૂર્વક તૈયાર કરેલા છે.
+              </p>
+            </div>
+            <div style="margin-top: 14px;">
+              <a href="about.html" class="page-portal-link" style="border: none; padding: 0;">Read Full Career Story &amp; Bio →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2026 FLOATING DYNAMIC ISLAND HUD DOCK (BOTTOM CENTER)
+         ========================================================================== -->
+    <div class="hud-dock-wrapper">
+      <div class="hud-dock">
+        <a href="index.html" class="hud-dock-item active" title="Home">
+          <span>🚀</span>
+          <span class="hud-tooltip">Home</span>
+        </a>
+        <a href="about.html" class="hud-dock-item" title="About">
+          <span>👤</span>
+          <span class="hud-tooltip">About</span>
+        </a>
+        <a href="skills.html" class="hud-dock-item" title="Skills">
+          <span>⚙️</span>
+          <span class="hud-tooltip">Skills</span>
+        </a>
+        <a href="projects.html" class="hud-dock-item" title="Projects">
+          <span>⚡</span>
+          <span class="hud-tooltip">Projects</span>
+        </a>
+        <a href="experience.html" class="hud-dock-item" title="Experience">
+          <span>💼</span>
+          <span class="hud-tooltip">Experience</span>
+        </a>
+        <a href="contact.html" class="hud-dock-item" title="Contact">
+          <span>✉️</span>
+          <span class="hud-tooltip">Contact</span>
+        </a>
+        <a href="downloads/Patel_Riddhi_Resume.html" target="_blank" class="hud-dock-item" title="Download CV">
+          <span>📄</span>
+          <span class="hud-tooltip">Resume</span>
+        </a>
+        <button onclick="toggleTerminal(true)" class="hud-dock-item" title="Open Terminal">
+          <span>💻</span>
+          <span class="hud-tooltip">Terminal</span>
+        </button>
+        <button class="hud-dock-item sound-toggle-btn" title="Toggle Sound">
+          <span>🔊</span>
+          <span class="hud-tooltip">SFX</span>
+        </button>
+        <button class="hud-dock-item theme-toggle-btn" title="Toggle Theme">
+          <span>🌙</span>
+          <span class="hud-tooltip">Theme</span>
+        </button>
+        <a href="https://wa.me/916359976105" target="_blank" rel="noopener noreferrer" class="hud-dock-item" title="WhatsApp Chat">
+          <span>💬</span>
+          <span class="hud-tooltip">Chat</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Interactive Terminal Modal Popup -->
+    <div id="terminal-modal" class="terminal-modal-backdrop">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="terminal-dot dot-red" onclick="toggleTerminal(false)" style="cursor: pointer;"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+          <div class="terminal-title">Patel Riddhi // 2026 Interactive CLI Console</div>
+          <button class="terminal-close-btn" onclick="toggleTerminal(false)" title="Close Terminal">✕</button>
+        </div>
+
+        <div class="terminal-quick-chips">
+          <span class="chip-label">Quick Cmds:</span>
+          <button class="term-chip" onclick="runTerminalCommand('whoami')">whoami</button>
+          <button class="term-chip" onclick="runTerminalCommand('skills')">skills</button>
+          <button class="term-chip" onclick="runTerminalCommand('projects')">projects</button>
+          <button class="term-chip" onclick="runTerminalCommand('stats')">stats</button>
+          <button class="term-chip" onclick="runTerminalCommand('gujarati')">gujarati</button>
+          <button class="term-chip" onclick="runTerminalCommand('contact')">contact</button>
+          <button class="term-chip" onclick="runTerminalCommand('clear')">clear</button>
+        </div>
+
+        <div class="terminal-body">
+          <div id="terminal-output">
+            <div class="term-system">
+              ✨ <strong style="color: #fb7185;">PATEL RIDDHI // 2026 ARCHITECTURAL SHELL ACTIVE</strong><br>
+              Type <span class="term-accent">'help'</span> to see all available commands, or click the quick action chips above!
+            </div>
+          </div>
+        </div>
+
+        <div class="term-input-row">
+          <span class="term-prompt">riddhi@2026:~$</span>
+          <input type="text" id="terminal-input" class="term-input-field" placeholder="Type command here (e.g. whoami, skills, projects)..." autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast-notification"></div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-rights">
+          © 2026 <strong>Patel Riddhi Jayeshbhai</strong>. SDJ International College, Surat. 2026 Architecture Release.
+        </div>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="skills.html" class="footer-link">Skills</a>
+          <a href="projects.html" class="footer-link">Projects</a>
+          <a href="experience.html" class="footer-link">Experience</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="downloads/Patel_Riddhi_Resume.html" target="_blank" class="footer-link">Resume (CV)</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Floating Ambient Canvas Mode Switcher -->
+  <div class="canvas-mode-bar">
+    <span class="canvas-mode-label">Canvas:</span>
+    <button class="canvas-mode-btn active" data-mode="particles">Mesh</button>
+    <button class="canvas-mode-btn" data-mode="matrix">Matrix</button>
+    <button class="canvas-mode-btn" data-mode="warp">Warp</button>
+  </div>
+
+  <!-- 2026 Next-Gen Scripts -->
+  <script src="assets/js/matrix-canvas.js"></script>
+  <script src="assets/js/audio.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/command-palette.js"></script>
+  <script src="assets/js/ai-assistant.js"></script>
+  <script src="assets/js/project-inspector.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

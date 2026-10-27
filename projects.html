@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Projects | Patel Riddhi - 2026 Production Decks</title>
+  <meta name="description" content="Production projects, web applications, and data science portfolios engineered by Patel Riddhi Jayeshbhai.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='28' fill='%23f43f5e'/><text x='50%25' y='68%25' font-size='54' font-family='sans-serif' font-weight='900' fill='white' text-anchor='middle'>RP</text><circle cx='82' cy='22' r='14' fill='%2300f5a0'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <canvas id="ambient-canvas" class="ambient-canvas"></canvas>
+
+  <div class="site-wrapper">
+
+    <!-- Live Telemetry Status Bar -->
+    <div class="telemetry-bar">
+      <div class="telemetry-container">
+        <div class="telemetry-left">
+          <span class="telemetry-pill">
+            <span class="telemetry-live-dot"></span>
+            <span>SYSTEM v3.8.0-PROD</span>
+          </span>
+          <span id="telemetry-clock" class="telemetry-clock">--:--:-- IST (Surat)</span>
+        </div>
+        <div class="telemetry-right">
+          <span class="telemetry-pill">
+            <span>⚡ Edge Latency:</span>
+            <span id="telemetry-ping" style="color: #00f5a0; font-weight:800;">16ms</span>
+          </span>
+          <button class="cmd-shortcut-hint" onclick="if(window.commandPalette) window.commandPalette.open();" title="Open HUD Command Center">
+            <span>Press <kbd>Ctrl+K</kbd> / <kbd>⌘K</kbd></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Navigation -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo-brand">
+          <div class="logo-avatar-pill">RP</div>
+          <div class="logo-title-group">
+            <span class="logo-name">
+              Riddhi Patel
+              <span class="verified-badge-mini" title="2026 Verified Developer">✓</span>
+            </span>
+            <span class="logo-badge">
+              <span class="pulse-dot"></span> SYSTEM OPERATIONAL
+            </span>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="skills.html" class="nav-link">Skills</a>
+          <a href="projects.html" class="nav-link active">Projects</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="cmd-nav-btn" onclick="if(window.commandPalette) window.commandPalette.open();" title="Open HUD Command Center (Ctrl+K or ⌘K)">
+            <span>⌘K</span>
+            <span>Search</span>
+          </button>
+          <a href="downloads/Patel_Riddhi_Resume.html" target="_blank" class="btn-resume-nav">
+            <span>📄</span>
+            <span>Resume (CV)</span>
+          </a>
+          <a href="PORTFOLIO_SUBMISSION_DOCUMENT.html" target="_blank" class="btn-outline">
+            <span>Report</span>
+          </a>
+          <button class="sound-toggle-btn" title="Toggle Sound">🔇</button>
+          <button class="theme-toggle-btn" title="Toggle Theme">🌙</button>
+          <a href="contact.html" class="btn-primary">
+            <span>⚡ Hire Me</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="subpage-badge">
+          <span>⚡ Practical Production Showcase</span>
+        </div>
+        <h1 class="subpage-title">
+          Featured Projects &amp; <span class="shimmer-text">Releases</span>
+        </h1>
+        <p class="subpage-subtitle">
+          Real academic and enterprise software applications showcasing full-stack token security, microservices, and data science pipelines.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section style="padding: 20px 0 90px;">
+      <div class="container">
+
+        <!-- Filter Controls -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects (5)</button>
+          <button class="filter-btn" data-filter="web">Web Applications</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack &amp; Auth</button>
+          <button class="filter-btn" data-filter="python">Python &amp; Data</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: QUICKSTAFF -->
+          <div class="project-card" data-category="fullstack web">
+            <div class="browser-chrome">
+              <div class="browser-dots">
+                <span class="b-dot dot-red"></span>
+                <span class="b-dot dot-yellow"></span>
+                <span class="b-dot dot-green"></span>
+              </div>
+              <div class="browser-url-bar">
+                <span>🔒</span> https://quickstaff.sdjic.edu.in [JWT AUTH // PRODUCTION]
+              </div>
+              <span class="browser-tag-badge">RELEASE #01</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">QuickStaff: On-Demand Workforce Management</h3>
+              <p class="project-summary">
+                A multi-portal on-demand staffing and job dispatching web platform engineered with React.js, Express, and PostgreSQL. Features secure API token authentication, real-time client booking, worker shift assignment, and administrative telemetry.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React.js (Vite)</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express API</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">JWT Auth</span>
+              </div>
+              <div class="project-footer-actions">
+                <button onclick="if(window.projectInspector) window.projectInspector.open('quickstaff');" class="btn-card-primary" style="background: linear-gradient(135deg, #00f5a0 0%, #059669 100%); color:#064e3b; font-weight:800; border:none; cursor:pointer;">
+                  <span>⚡ Sandbox &amp; Arch</span>
+                  <span>🎮</span>
+                </button>
+                <a href="downloads/quick_staff.zip" download class="btn-card-outline">
+                  <span>💾 Source (.zip)</span>
+                </a>
+                <a href="contact.html" class="btn-card-outline">
+                  <span>Inquire</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: SKILL SWAP -->
+          <div class="project-card" data-category="web">
+            <div class="browser-chrome">
+              <div class="browser-dots">
+                <span class="b-dot dot-red"></span>
+                <span class="b-dot dot-yellow"></span>
+                <span class="b-dot dot-green"></span>
+              </div>
+              <div class="browser-url-bar">
+                <span>🔒</span> https://skillswap.peer-network.local [PHP 8 / APACHE]
+              </div>
+              <span class="browser-tag-badge">RELEASE #02</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Skill Swap Platform</h3>
+              <p class="project-summary">
+                A collaborative peer-to-peer web platform where users exchange technical and artistic skills without monetary transactions. Members create expertise profiles, search categories, and request barter swaps with instant notifications.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">PHP 8</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Apache</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-footer-actions">
+                <button onclick="if(window.projectInspector) window.projectInspector.open('skillswap');" class="btn-card-primary" style="background: linear-gradient(135deg, #00f5a0 0%, #059669 100%); color:#064e3b; font-weight:800; border:none; cursor:pointer;">
+                  <span>⚡ Match Simulator</span>
+                  <span>🤝</span>
+                </button>
+                <a href="downloads/skill_swap.zip" download class="btn-card-outline">
+                  <span>💾 Source (.zip)</span>
+                </a>
+                <a href="contact.html" class="btn-card-outline">
+                  <span>Details</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: GOVERNMENT TENDER PORTAL -->
+          <div class="project-card" data-category="fullstack web">
+            <div class="browser-chrome">
+              <div class="browser-dots">
+                <span class="b-dot dot-red"></span>
+                <span class="b-dot dot-yellow"></span>
+                <span class="b-dot dot-green"></span>
+              </div>
+              <div class="browser-url-bar">
+                <span>🔒</span> https://tender-portal.gov.in [E-GOVERNANCE]
+              </div>
+              <span class="browser-tag-badge">RELEASE #03</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Government Tender &amp; Bidding Portal</h3>
+              <p class="project-summary">
+                An electronic procurement system engineered to digitize public sector tenders. Enables administrative authorities to publish tenders with eligibility timelines and allows verified vendors to submit encrypted bids online, enhancing transparency.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+              <div class="project-footer-actions">
+                <button onclick="if(window.projectInspector) window.projectInspector.open('tender');" class="btn-card-primary" style="background: linear-gradient(135deg, #00f5a0 0%, #059669 100%); color:#064e3b; font-weight:800; border:none; cursor:pointer;">
+                  <span>⚡ L1 Bid Evaluator</span>
+                  <span>🏆</span>
+                </button>
+                <a href="downloads/government_tender_portal.zip" download class="btn-card-outline">
+                  <span>💾 Source (.zip)</span>
+                </a>
+                <a href="contact.html" class="btn-card-outline">
+                  <span>Details</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: MARRIAGE BUDGET ANALYSIS -->
+          <div class="project-card" data-category="python">
+            <div class="browser-chrome">
+              <div class="browser-dots">
+                <span class="b-dot dot-red"></span>
+                <span class="b-dot dot-yellow"></span>
+                <span class="b-dot dot-green"></span>
+              </div>
+              <div class="browser-url-bar">
+                <span>🔒</span> https://colab.research.google.com/drive/1IPLtF_LjM32drrGzTFJuS1Bd8MAyOoc1
+              </div>
+              <span class="browser-tag-badge" style="color:#00f5a0; border-color:#00f5a0;">DATA SCIENCE</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Marriage Budget Analysis (Python EDA)</h3>
+              <p class="project-summary">
+                Exploratory Data Analysis project evaluating wedding expenditure datasets using Python data science libraries. Identifies disproportionate cost drivers, spending patterns, and correlation trends across budget categories to guide realistic financial event planning.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python 3.x</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Seaborn</span>
+                <span class="tech-tag">Google Colab</span>
+              </div>
+              <div class="project-footer-actions">
+                <button onclick="if(window.projectInspector) window.projectInspector.open('budgeteda');" class="btn-card-primary" style="background: linear-gradient(135deg, #00f5a0 0%, #059669 100%); color:#064e3b; font-weight:800; border:none; cursor:pointer;">
+                  <span>⚡ Variance Simulator</span>
+                  <span>📊</span>
+                </button>
+                <a href="https://colab.research.google.com/drive/1IPLtF_LjM32drrGzTFJuS1Bd8MAyOoc1?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-colab">
+                  <span>🚀 Colab ↗</span>
+                </a>
+                <a href="contact.html" class="btn-card-outline">
+                  <span>Insights</span>
+                </a>
+              </div>
+                  <span>Insights</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: SUBSCRIPTION TRACKER -->
+          <div class="project-card" data-category="web">
+            <div class="browser-chrome">
+              <div class="browser-dots">
+                <span class="b-dot dot-red"></span>
+                <span class="b-dot dot-yellow"></span>
+                <span class="b-dot dot-green"></span>
+              </div>
+              <div class="browser-url-bar">
+                <span>🔒</span> https://github.com/riddhiPatel610/subscription-tracker
+              </div>
+              <span class="browser-tag-badge">RELEASE #05</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Subscription Tracker &amp; Financial Dashboard</h3>
+              <p class="project-summary">
+                A clean financial utility web application that centralizes recurring digital software and media subscriptions in one place. Calculates monthly and annualized expenses, tracks renewal dates, and issues timely alerts to prevent unnecessary charges.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">LocalStorage</span>
+                <span class="tech-tag">Node.js API</span>
+              </div>
+              <div class="project-footer-actions">
+                <a href="https://github.com/riddhiPatel610" target="_blank" rel="noopener noreferrer" class="btn-card-primary">
+                  <span>GitHub Repository ↗</span>
+                </a>
+                <a href="contact.html" class="btn-card-outline">
+                  <span>Details</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating Dynamic Island HUD Dock -->
+    <div class="hud-dock-wrapper">
+      <div class="hud-dock">
+        <a href="index.html" class="hud-dock-item" title="Home"><span>🚀</span><span class="hud-tooltip">Home</span></a>
+        <a href="about.html" class="hud-dock-item" title="About"><span>👤</span><span class="hud-tooltip">About</span></a>
+        <a href="skills.html" class="hud-dock-item" title="Skills"><span>⚙️</span><span class="hud-tooltip">Skills</span></a>
+        <a href="projects.html" class="hud-dock-item active" title="Projects"><span>⚡</span><span class="hud-tooltip">Projects</span></a>
+        <a href="experience.html" class="hud-dock-item" title="Experience"><span>💼</span><span class="hud-tooltip">Experience</span></a>
+        <a href="contact.html" class="hud-dock-item" title="Contact"><span>✉️</span><span class="hud-tooltip">Contact</span></a>
+        <a href="downloads/Patel_Riddhi_Resume.html" target="_blank" class="hud-dock-item" title="Resume"><span>📄</span><span class="hud-tooltip">Resume</span></a>
+        <button class="hud-dock-item sound-toggle-btn" title="Toggle Sound"><span>🔊</span><span class="hud-tooltip">SFX</span></button>
+        <button class="hud-dock-item theme-toggle-btn" title="Toggle Theme"><span>🌙</span><span class="hud-tooltip">Theme</span></button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-rights">
+          © 2026 <strong>Patel Riddhi Jayeshbhai</strong>. SDJ International College, Surat. All rights reserved.
+        </div>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="skills.html" class="footer-link">Skills</a>
+          <a href="projects.html" class="footer-link">Projects</a>
+          <a href="experience.html" class="footer-link">Experience</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Floating Ambient Canvas Mode Switcher -->
+  <div class="canvas-mode-bar">
+    <span class="canvas-mode-label">Canvas:</span>
+    <button class="canvas-mode-btn active" data-mode="particles">Mesh</button>
+    <button class="canvas-mode-btn" data-mode="matrix">Matrix</button>
+    <button class="canvas-mode-btn" data-mode="warp">Warp</button>
+  </div>
+
+  <div id="toast" class="toast-notification"></div>
+
+  <!-- Interactive Terminal Modal Popup -->
+  <div id="terminal-modal" class="terminal-modal-backdrop">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <span class="terminal-dot dot-red" onclick="toggleTerminal(false)" style="cursor: pointer;"></span>
+          <span class="terminal-dot dot-yellow"></span>
+          <span class="terminal-dot dot-green"></span>
+        </div>
+        <div class="terminal-title">Patel Riddhi // 2026 Interactive CLI Console</div>
+        <button class="terminal-close-btn" onclick="toggleTerminal(false)" title="Close Terminal">✕</button>
+      </div>
+      <div class="terminal-quick-chips">
+        <span class="chip-label">Quick Cmds:</span>
+        <button class="term-chip" onclick="runTerminalCommand('whoami')">whoami</button>
+        <button class="term-chip" onclick="runTerminalCommand('skills')">skills</button>
+        <button class="term-chip" onclick="runTerminalCommand('projects')">projects</button>
+        <button class="term-chip" onclick="runTerminalCommand('stats')">stats</button>
+        <button class="term-chip" onclick="runTerminalCommand('clear')">clear</button>
+      </div>
+      <div class="terminal-body">
+        <div id="terminal-output">
+          <div class="term-system">
+            ✨ <strong style="color: #fb7185;">PATEL RIDDHI // 2026 ARCHITECTURAL SHELL ACTIVE</strong><br>
+            Type <span class="term-accent">'help'</span> to see all available commands!
+          </div>
+        </div>
+      </div>
+      <div class="term-input-row">
+        <span class="term-prompt">riddhi@2026:~$</span>
+        <input type="text" id="terminal-input" class="term-input-field" placeholder="Type command here..." autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+  </div>
+
+  <!-- 2026 Next-Gen Scripts -->
+  <script src="assets/js/matrix-canvas.js"></script>
+  <script src="assets/js/audio.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/command-palette.js"></script>
+  <script src="assets/js/ai-assistant.js"></script>
+  <script src="assets/js/project-inspector.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
